@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Random Template Generator</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <script src="./js/generator.js"></script>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+
+  <iframe id="anmID" src="./lists/animals.txt" onload="LoadFile('anmID');" style="display: none;"></iframe>
+  <iframe id="thiID" src="./lists/things.txt" onload="LoadFile('thiID');" style="display: none;"></iframe>
+  <iframe id="actID" src="./lists/actions.txt" onload="LoadFile('actID');" style="display: none;"></iframe>  
+
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="mailto:hello@brooklynwalkerart.com" class="linkedin"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.instagram.com/brooklynwalker.art/" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left" >
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light" style="font-size: 30px;"><a href="https://brooklynwalkerart.com" class="scrollto"><span>Brooklyn Walker</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li><a href="https://brooklynwalkerart.com/portfolio">Portfolio</a></li>
+          <li><a href="https://brooklynwalkerart.com/resume-1">Résumé</a></li>
+          <li><a href="https://brooklynwalkerart.com/contact">About + Contact</a></li>
+          <li><a href="https://www.inprnt.com/gallery/brooklynwalker/">Store</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <hr>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+        <div class="col-lg-12 intro-info order-md-first order-last" style="margin-top: 80px; text-align: center;">
+          <div>
+            <a onclick="randomizeCombo()" class="btn-get-started scrollto" style="background-color: black; cursor:pointer;">Generate Prompt</a>
+            <br>
+            <br>
+            <br>
+            <p id="randomizer"></p>
+          </div>
+        </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+
+  </main>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
